@@ -16,7 +16,7 @@ body {
 }
 
 .header-content {
-    width: 90%;
+    width: 95%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,7 +57,58 @@ body {
     text-align: center;
 }
 
-.about {
+.section {
     height: 100vh;
     width: 100%;
+    background-color: #f0f0f0;
+}
+
+.project-table {
+    width: 95%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project-table tr:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.project-table td {
+    padding: 1%;
+}
+
+.project-count-cell {
+    width: 5%;
+    text-align: center;
+}
+
+.project-img-cell {
+    width: 25%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.project-title-cell {
+    width: 20%;
+}
+
+.project-desc-cell {
+    width: 20%;
+}
+
+.project-author-cell {
+    width: 20%;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
