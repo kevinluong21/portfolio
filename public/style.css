@@ -38,6 +38,11 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 .scroll-button {
     position: absolute;
     bottom: 0;
@@ -46,9 +51,11 @@ body {
 }
 
 .scroll-text {
+    font-family: Arial;
     font-size: 150%;
     margin-bottom: 0;
     text-align: center;
+    color: black;
 }
 
 .down-arrow {
@@ -61,20 +68,29 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #f0f0f0;
+    padding-top: 5%;
 }
 
 .project-table {
     width: 95%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-collapse: collapse;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+}
+
+.project-table tr {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .project-table tr:hover {
     background-color: pink;
     cursor: pointer;
+}
+
+.project-table tr:hover .project-img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .project-table td {
@@ -94,21 +110,38 @@ body {
 
 .project-title-cell {
     width: 20%;
+    vertical-align: bottom;
+}
+
+.project-title-cell h1 {
+    margin: 0;
 }
 
 .project-desc-cell {
     width: 20%;
+    vertical-align: bottom;
+}
+
+.project-desc-cell p {
+    margin: 0;
 }
 
 .project-author-cell {
     width: 20%;
+    vertical-align: bottom;
 }
 
-.project-img img {
+.project-author-cell p {
+    margin: 0;
+}
+
+.project-img {
     width: 100%;
     height: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center;
     display: block;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
