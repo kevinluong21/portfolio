@@ -11,7 +11,9 @@ body {
 .header {
     width: 100%;
     height: 100vh;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-image: url("images/white-wall-background.jpg");
+    background-size: cover;
     position: relative;
 }
 
@@ -21,6 +23,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
 }
 
 .header-title {
@@ -48,6 +51,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
+    mix-blend-mode: multiply;
 }
 
 .scroll-text {
@@ -67,7 +71,9 @@ body {
 .section {
     height: 100vh;
     width: 100%;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-image: url("images/white-wall-background.jpg");
+    background-size: cover;
     padding-top: 5%;
 }
 
@@ -76,6 +82,7 @@ body {
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
     border-collapse: collapse;
+    mix-blend-mode: multiply;
 }
 
 .project-table tr {
