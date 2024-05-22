@@ -101,7 +101,10 @@ body {
 }
 
 .project-table td {
-    padding: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .project-count-cell {
@@ -111,8 +114,8 @@ body {
 
 .project-img-cell {
     width: 25%;
-    overflow: hidden;
     vertical-align: middle;
+    position: relative;
 }
 
 .project-title-cell {
@@ -151,4 +154,31 @@ body {
     display: block;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.tape-upper-left {
+    width: 75%;
+    position: absolute;
+    z-index: 10;
+    transform: rotate(-10deg);
+    top: 0px;
+    left: -40px;
+}
+
+.tape-lower-right {
+    width: 75%;
+    position: absolute;
+    z-index: 10;
+    transform: rotate(-10deg);
+    bottom: 0px;
+    right: -20px;
+}
+
+.tape-upper-center {
+    width: 75%;
+    position: absolute;
+    z-index: 10;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -10%);
 }
