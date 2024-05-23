@@ -89,9 +89,27 @@ body {
     height: 100vh;
     width: 100%;
     /* background-color: #f0f0f0; */
-    background-image: url("images/white-wall-background.jpg");
+    /* background-image: url("images/white-wall-background.jpg"); */
     background-size: cover;
     padding-top: 5%;
+}
+
+#about {
+    background-color: #f0f0f0;
+}
+
+.resume {
+    width: 90%;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.resume h1 {
+    display: inline;
+}
+
+#projects {
+    background-image: url("images/white-wall-background.jpg");
 }
 
 .project-table {
