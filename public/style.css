@@ -86,26 +86,86 @@ body {
 }
 
 .section {
-    height: 100vh;
     width: 100%;
     /* background-color: #f0f0f0; */
     /* background-image: url("images/white-wall-background.jpg"); */
     background-size: cover;
     padding-top: 5%;
+    padding-bottom: 5%;
+    overflow: hidden;
 }
 
-#about {
-    background-color: #f0f0f0;
+#about-jessica, #about-kevin {
+    background-color: #E4E4E4;
+}
+
+#about-jessica {
+    background-image: url("images/jessica_resume_bg.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#about-kevin {
+    background-image: url("images/kevin_resume_bg.png");
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
 .resume {
-    width: 90%;
-    margin: auto;
+    width: 60%;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.resume h1 {
-    display: inline;
+.resume h1, .resume h2, .resume ul, .resume table {
+    width: fit-content;
+    clear: both;
+}
+
+.resume ul {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.resume li:before {
+    content: "\2605";
+    margin: 0 1em;
+}
+
+.resume h4 {
+    margin: 0;
+}
+
+.resume-header {
+    padding-right: 5%;
+    width: 20%;
+}
+
+.resume-desc {
+    width: 75%;
+}
+
+#jessica-resume {
+    text-align: left;
+    float: left;
+    margin-left: 5%;
+}
+
+#jessica-resume h1, #jessica-resume h2, #jessica-resume ul, #jessica-resume table {
+    float: left;
+}
+
+#kevin-resume {
+    text-align: right;
+    float: right;
+    margin-right: 5%;
+}
+
+#kevin-resume h1, #kevin-resume h2, #kevin-resume ul, #kevin-resume table {
+    float: right;
 }
 
 #projects {
