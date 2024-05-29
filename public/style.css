@@ -37,7 +37,7 @@ body {
     margin: 0;
     padding: 0;
     float: right;
-    width: fit-content;
+    width: 50%;
     position: absolute;
     top: 50%;
     right: 5%;
@@ -46,6 +46,9 @@ body {
 
 .nav-list li {
     display: inline;
+    float: right;
+    padding-left: 5%;
+    height: 100%;
 }
 
 .nav-list a {
@@ -54,11 +57,33 @@ body {
 }
 
 .dropdown-content {
-    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.dropdown-content:hover .connect-list, .connect-list:hover {
+    display: block;
 }
 
 .connect-list {
     display: none;
+    width: 150%;
+    position: absolute;
+    top: 100%;
+    background-color: pink;
+    padding: 10%;
+}
+
+.connect-list ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+.connect-list li {
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .header {
