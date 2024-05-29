@@ -10,7 +10,7 @@ body {
 
 .nav-bar {
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     height: 10%;
     background-color: white;
@@ -212,45 +212,32 @@ body {
     width: 95%;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
-    border-collapse: collapse;
     mix-blend-mode: multiply;
-}
-
-.project-table tr {
     border-top: 2px solid black;
+}
+
+.project-table-row {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     border-bottom: 2px solid black;
-}
-
-.project-table tr:hover {
-    background-color: pink;
-    cursor: pointer;
-}
-
-.project-table tr:hover .project-img {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
-.project-table td {
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 3%;
-    padding-bottom: 3%;
 }
 
 .project-count-cell {
     width: 5%;
+    display: inline-block;
     text-align: center;
 }
 
 .project-img-cell {
     width: 25%;
+    display: inline-block;
     vertical-align: middle;
     position: relative;
 }
 
 .project-title-cell {
     width: 20%;
+    display: inline-block;
     vertical-align: bottom;
 }
 
@@ -260,6 +247,7 @@ body {
 
 .project-desc-cell {
     width: 20%;
+    display: inline-block;
     vertical-align: bottom;
 }
 
@@ -269,6 +257,7 @@ body {
 
 .project-author-cell {
     width: 20%;
+    display: inline-block;
     vertical-align: bottom;
 }
 
@@ -282,7 +271,7 @@ body {
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center;
-    display: block;
+    display: inline-block;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
@@ -290,26 +279,26 @@ body {
 .tape-upper-left {
     width: 75%;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     transform: rotate(-10deg);
-    top: 0px;
-    left: -40px;
+    top: -5%;
+    left: -15%;
 }
 
 .tape-lower-right {
     width: 75%;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     transform: rotate(-10deg);
-    bottom: 0px;
-    right: -20px;
+    bottom: -10%;
+    right: -5%;
 }
 
 .tape-upper-center {
     width: 75%;
     position: absolute;
-    z-index: 10;
-    top: 5%;
+    z-index: 1;
+    top: -10%;
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, 10%);
 }
