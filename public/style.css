@@ -13,9 +13,9 @@ body {
     z-index: 100;
     width: 100%;
     height: 15%;
-    background-image: url("images/torn\ paper\ by\ freeject.net\ 5.png"), linear-gradient(to bottom, #e6e6e6 50%, transparent 70%);
+    background-image: url("images/torn\ paper\ by\ freeject.net\ 5.png"), linear-gradient(to bottom, #e6e6e6 0%, transparent 50%);
     background-position: bottom;
-    background-size: 40%;
+    background-size: 40% 100%, cover;
     background-repeat: repeat-x;
 }
 
