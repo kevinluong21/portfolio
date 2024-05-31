@@ -100,7 +100,7 @@ body {
     height: 110vh;
     padding-top: 15%;
     /* background-color: #f0f0f0; */
-    background-image: url("images/white-wall-background.jpg");
+    background-image: url("images/header_bg.jpeg");
     background-size: cover;
     position: relative;
 }
@@ -111,7 +111,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    mix-blend-mode: multiply;
 }
 
 .header-title {
@@ -122,16 +121,13 @@ body {
     letter-spacing: -7px;
     line-height: 95%;
     text-transform: uppercase;
+    color: white;
 }
 
 .header-subtitle {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.link {
-    text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .scroll-button {
@@ -139,15 +135,19 @@ body {
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
-    mix-blend-mode: multiply;
+}
+
+.scroll-button a {
+    text-decoration: none;
+    color: white;
 }
 
 .scroll-text {
-    font-family: Arial;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 150%;
     margin-bottom: 0;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .down-arrow {
@@ -426,6 +426,7 @@ body {
 }
 
 .project-languages li {
+    margin: 1%;
     padding: 1%;
     display: inline-block;
     background-color: pink;
