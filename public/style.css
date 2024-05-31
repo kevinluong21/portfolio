@@ -258,9 +258,17 @@ body {
 }
 
 .project-table-row {
+    border-bottom: 2px solid black;
+}
+
+.project-summary {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
-    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.project-summary:hover {
+    background-color: pink;
 }
 
 .project-count-cell {
@@ -276,41 +284,34 @@ body {
     position: relative;
 }
 
-.project-info-cell{
-    width: 95%;
-    display: inline-block;
-    vertical-align: middle;
-    align-items: center;
-    position: relative;
-    margin-top: 75px;
-    margin-left: 100px; 
-    margin-bottom: 20px;
-}
-
 .project-title-cell {
-    width: 10%;
+    width: 20%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
 }
 
 .project-title-cell h1 {
     margin: 0;
 }
 
-.project-desc-cell {
-    width: 68%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.project-desc-cell p {
-    margin: 0;
-}
-
 .project-author-cell {
     width: 20%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: bottom;
+}
+
+.project-author-cell p {
+    margin: 0;
+}
+
+.project-link-cell {
+    width: 20%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.project-link-cell h3 {
+    margin: 0;
 }
 
 .project-img {
@@ -350,3 +351,56 @@ body {
     left: 50%;
     transform: translate(-50%, 10%);
 }
+
+.project-more-info {
+    width: 100%;
+    display: flex;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.project-languages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-languages li {
+    padding: 1%;
+    display: inline-block;
+    background-color: pink;
+}
+
+.project-details {
+    width: 60%;
+    height: fit-content;
+    display: inline-block;
+    padding: 2%;
+    border: 2px solid black;
+}
+
+.project-gallery {
+    max-width: 40%;
+    display: inline-block;
+}
+
+.project-gallery-row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-gallery-column {
+    flex: 50%;
+    max-width: 45%;
+    padding-left: 10px;
+}
+
+.project-gallery-column img {
+    width: 100%;
+    vertical-align: middle;
+    padding-top: 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
