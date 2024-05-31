@@ -59,6 +59,10 @@ body {
     color: black;
 }
 
+.nav-list a:hover {
+    background-color: white;
+}
+
 .dropdown-content {
     position: relative;
     height: 100%;
@@ -283,7 +287,6 @@ body {
     width: 95%;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
-    mix-blend-mode: multiply;
     border-top: 2px solid black;
 }
 
@@ -295,6 +298,11 @@ body {
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     cursor: pointer;
+}
+
+.project-summary:hover .project-img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .project-summary:hover {
@@ -408,6 +416,16 @@ body {
     border: 2px solid black;
 }
 
+.project-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-content li:before {
+    content: "\2605";
+    margin: 0 1em;
+}
+
 .project-gallery {
     max-width: 40%;
     display: inline-block;
@@ -432,5 +450,10 @@ body {
     padding-top: 10px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.project-gallery-column img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
