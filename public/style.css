@@ -181,6 +181,7 @@ body {
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #about-kevin {
@@ -188,14 +189,15 @@ body {
     background-size: contain;
     background-position: left;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .resume {
-    width: 60%;
+    width: 50%;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.resume h1, .resume h2, .resume ul, .resume table {
+.resume h1, .resume h2, .resume ul, .resume table, .resume p {
     width: fit-content;
     clear: both;
 }
@@ -216,6 +218,34 @@ body {
     margin: 0;
 }
 
+.skills-bars {
+    width: 80%;
+    clear: both;
+}
+
+.skill {
+    width: 100%;
+    display: flex;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+.progress-percent {
+    margin: 0 2.5%;
+    vertical-align: middle;
+}
+
 .resume-header {
     padding-right: 5%;
     width: 20%;
@@ -231,7 +261,7 @@ body {
     margin-left: 5%;
 }
 
-#jessica-resume h1, #jessica-resume h2, #jessica-resume ul, #jessica-resume table {
+#jessica-resume h1, #jessica-resume h2, #jessica-resume ul, #jessica-resume table, #jessica-resume .skills-bars {
     float: left;
 }
 
@@ -241,7 +271,7 @@ body {
     margin-right: 5%;
 }
 
-#kevin-resume h1, #kevin-resume h2, #kevin-resume ul, #kevin-resume table {
+#kevin-resume h1, #kevin-resume h2, #kevin-resume ul, #kevin-resume table, #kevin-resume p, #kevin-resume .skills-bars {
     float: right;
 }
 
