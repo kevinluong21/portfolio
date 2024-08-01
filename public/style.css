@@ -287,13 +287,13 @@ body {
 }
 
 #kevin-resume {
-    text-align: right;
-    float: right;
-    margin-right: 5%;
+    text-align: left;
+    float: left;
+    margin-left: 5%;
 }
 
 #kevin-resume h1, #kevin-resume h2, #kevin-resume ul, #kevin-resume table, #kevin-resume p, #kevin-resume .skills-bars {
-    float: right;
+    float: left;
 }
 
 /* the projects section styles */
